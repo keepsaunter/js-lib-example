@@ -2,7 +2,7 @@ import React from 'react';
 
 const SvgComponent = React.forwardRef<SVGSVGElement, any>((_, ref) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox='0 0 1000 500' ref={ref}>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox='0 0 2100 2100' ref={ref}>
       <g>
         <title>Layer 1</title>
         <rect stroke="#000" id="svg_3" height="349.99999" width="700.00002" y="50" x="31" fill="#0fffff"/>
