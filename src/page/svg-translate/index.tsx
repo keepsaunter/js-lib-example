@@ -8,7 +8,15 @@ const PageSvgTranslate: React.FC<any> = () => {
 
   useEffect(() => {
     if (svgRef.current) {
-      addScrollToSvgElement(svgRef.current);
+      const hooks = addScrollToSvgElement(svgRef.current);
+      if (hooks) {
+        const { clearEventListener, scrollToPoint } = hooks;
+
+        setTimeout(() => {
+          scrollToPoint({ x: 380, y: 225 })
+        }, 1000)
+        if (clearEventListener) return clearEventListener;
+      }
     }
   }, []);
 
