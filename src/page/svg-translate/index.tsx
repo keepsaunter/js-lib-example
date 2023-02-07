@@ -13,7 +13,7 @@ const PageSvgTranslate: React.FC<any> = () => {
         const { clearEventListener, scrollToPoint } = hooks;
 
         setTimeout(() => {
-          scrollToPoint({ x: 380, y: 225 })
+          scrollToPoint({ x: 100, y: 70 })
         }, 1000)
         if (clearEventListener) return clearEventListener;
       }
