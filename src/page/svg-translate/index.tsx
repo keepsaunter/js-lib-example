@@ -10,10 +10,10 @@ const PageSvgTranslate: React.FC<any> = () => {
     if (svgRef.current) {
       const hooks = addScrollToSvgElement(svgRef.current);
       if (hooks) {
-        const { clearEventListener, scrollToPoint } = hooks;
+        const { clearEventListener, scrollToSvgPoint } = hooks;
 
         setTimeout(() => {
-          scrollToPoint({ x: 100, y: 70 })
+          scrollToSvgPoint({ x: 0, y: 0 })
         }, 1000)
         if (clearEventListener) return clearEventListener;
       }
